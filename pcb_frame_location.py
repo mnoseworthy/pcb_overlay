@@ -130,7 +130,7 @@ Main control flow
 if __name__ == '__main__':
    
     # Iterate over test-files
-    for filename in os.listdir('./assets'):
+    for filename in os.listdir('./assets/frame_location_test'):
         if filename.endswith('.jpg'):
             image_path = os.path.join('./assets', filename)
             find_frame_0(image_path)

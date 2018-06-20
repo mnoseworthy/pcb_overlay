@@ -95,10 +95,10 @@ def overlay_image_alpha(img, img_overlay, pos, alpha_mask):
 
 if __name__ == '__main__':
     # Load full-frame image
-    frame = cv2.imread("assets/Ganglion-FRONT-2.jpg")
+    frame = cv2.imread("assets/overlay_test/Ganglion-FRONT-2.jpg")
     backup = frame.copy()
     # Load overlay image
-    overlay = cv2.imread("assets/Ganglion-test-overlay.png")
+    overlay = cv2.imread("assets/overlay_test/Ganglion-test-overlay.png")
     # Detect PCB contour in frame
     pcb_contour, center  = find_overlay_region(frame)
     # Determine offset of contour in frame
